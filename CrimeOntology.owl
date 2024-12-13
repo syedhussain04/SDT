@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://element010.org/ontologies/crimeanalysis"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://element010.org/ontologies/crimeanalysis">
+    <Prefix name="" IRI="ex:"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="CrimeOntology" IRI="ex"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This ontology represents crime-related concepts and their relationships</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Crime Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Arrest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assault"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaseStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrimeStatistics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrimeType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriminalProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriminalRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyberCrime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DNA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fingerprint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstTimeOffender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Juvenile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Officer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepeatOffender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robbery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sentence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Victim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Witness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuspect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVictim"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesEvidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occurredAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#profileOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedToOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedWeapon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#witnessedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CrimeReportNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IncidentType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LocationName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SeverityLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TrialDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#height"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sentenceDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crime1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suspect1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suspect2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Victim1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Victim2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weapon1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weapon2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#location1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#location2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#witness1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#witness2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Assault"/>
+        <Class IRI="#CrimeType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DNA"/>
+        <Class IRI="#Evidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fingerprint"/>
+        <Class IRI="#Evidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstTimeOffender"/>
+        <Class IRI="#Suspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Juvenile"/>
+        <Class IRI="#Suspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepeatOffender"/>
+        <Class IRI="#Suspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robbery"/>
+        <Class IRI="#CrimeType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theft"/>
+        <Class IRI="#CrimeType"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Assault"/>
+        <Class IRI="#Robbery"/>
+        <Class IRI="#Theft"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Building"/>
+        <Class IRI="#City"/>
+        <Class IRI="#Park"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DNA"/>
+        <Class IRI="#Fingerprint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FirstTimeOffender"/>
+        <Class IRI="#Juvenile"/>
+        <Class IRI="#RepeatOffender"/>
+    </DisjointClasses>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#IncidentType"/>
+        <NamedIndividual IRI="#Crime1"/>
+        <Literal>Robbery</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeverityLevel"/>
+        <NamedIndividual IRI="#Crime1"/>
+        <Literal>High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Crime1"/>
+        <Literal>2024-12-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#IncidentType"/>
+        <NamedIndividual IRI="#location1"/>
+        <Literal>Murder</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationName"/>
+        <NamedIndividual IRI="#location1"/>
+        <Literal>Park</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuspect"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVictim"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesEvidence"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occurredAt"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#profileOf"/>
+        <Class IRI="#CriminalProfile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatedToOrganization"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedWeapon"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#witnessedBy"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSuspect"/>
+        <Class IRI="#Suspect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVictim"/>
+        <Class IRI="#Victim"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesEvidence"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occurredAt"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#profileOf"/>
+        <Class IRI="#Suspect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatedToOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedWeapon"/>
+        <Class IRI="#Weapon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#witnessedBy"/>
+        <Class IRI="#Witness"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CrimeReportNumber"/>
+        <Class IRI="#Crime"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IncidentType"/>
+        <Class IRI="#Crime"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LocationName"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SeverityLevel"/>
+        <Class IRI="#Crime"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TrialDate"/>
+        <Class IRI="#Trial"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#Suspect"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Crime"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Suspect"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Victim"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gender"/>
+        <Class IRI="#Suspect"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDate"/>
+        <Class IRI="#Crime"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#height"/>
+        <Class IRI="#Suspect"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sentenceDuration"/>
+        <Class IRI="#Sentence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weight"/>
+        <Class IRI="#Suspect"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weight"/>
+        <Class IRI="#Victim"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#CrimeReportNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IncidentType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LocationName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SeverityLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TrialDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#height"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sentenceDuration"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sentenceDuration</IRI>
+        <Literal>John Doe</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
